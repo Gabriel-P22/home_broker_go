@@ -23,7 +23,7 @@ func (c *Consumer) Consume(msgChan chan *ckafka.Message) error {
 
 	err = consumer.SubscribeTopics(c.Topics, nil)
 
-	if err != nill {
+	if err != nil {
 		panic(err)
 	}
 
